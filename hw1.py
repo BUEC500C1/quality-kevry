@@ -111,5 +111,4 @@ def conversion_func(arabic_num):
 
 	return roman_num
 
-def test_converter():
-	assert conversion_func(4) == 4
+

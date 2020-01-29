@@ -4,7 +4,7 @@ def conversion_func(arabic_num):
     while arabic_num != 0:
 
         if arabic_num >= 1000:
-            times = arabic_num / 1000
+            times = arabic_num // 1000
 
             arabic_num = arabic_num - (1000 * times)
 
@@ -12,7 +12,7 @@ def conversion_func(arabic_num):
                 roman_num += 'M'
 
         elif arabic_num >= 900:
-            times = arabic_num / 900
+            times = arabic_num // 900
 
             arabic_num = arabic_num - (900 * times)
 
@@ -20,7 +20,7 @@ def conversion_func(arabic_num):
                 roman_num += 'CM'
 
         elif arabic_num >= 500:
-            times = arabic_num / 500
+            times = arabic_num // 500
 
             arabic_num = arabic_num - (500 * times)
 
@@ -28,7 +28,7 @@ def conversion_func(arabic_num):
                 roman_num += 'D'
 
         elif arabic_num >= 400:
-            times = arabic_num / 400
+            times = arabic_num // 400
 
             arabic_num = arabic_num - (400 * times)
 
@@ -36,7 +36,7 @@ def conversion_func(arabic_num):
                 roman_num += 'CD'
 
         elif arabic_num >= 100:
-            times = arabic_num / 100
+            times = arabic_num // 100
 
             arabic_num = arabic_num - (100 * times)
 
@@ -44,7 +44,7 @@ def conversion_func(arabic_num):
                 roman_num += 'C'
 
         elif arabic_num >= 90:
-            times = arabic_num / 90
+            times = arabic_num // 90
 
             arabic_num = arabic_num - (90 * times)
 
@@ -52,7 +52,7 @@ def conversion_func(arabic_num):
                 roman_num += 'XC'
 
         elif arabic_num >= 50:
-            times = arabic_num / 50
+            times = arabic_num // 50
 
             arabic_num = arabic_num - (50 * times)
 
@@ -60,7 +60,7 @@ def conversion_func(arabic_num):
                 roman_num += 'L'
 
         elif arabic_num >= 40:
-            times = arabic_num / 40
+            times = arabic_num // 40
 
             arabic_num = arabic_num - (40 * times)
 
@@ -68,7 +68,7 @@ def conversion_func(arabic_num):
                 roman_num += 'XL'
 
         elif arabic_num >= 10:
-            times = arabic_num / 10
+            times = arabic_num // 10
 
             arabic_num = arabic_num - (10 * times)
 
@@ -76,7 +76,7 @@ def conversion_func(arabic_num):
                 roman_num += 'X'
 
         elif arabic_num >= 9:
-            times = arabic_num / 9
+            times = arabic_num // 9
 
             arabic_num = arabic_num - (9 * times)
 
@@ -84,7 +84,7 @@ def conversion_func(arabic_num):
                 roman_num += 'IX'
 
         elif arabic_num >= 5:
-            times = arabic_num / 5
+            times = arabic_num // 5
 
             arabic_num = arabic_num - (5 * times)
 
@@ -92,7 +92,7 @@ def conversion_func(arabic_num):
                 roman_num += 'V'
 
         elif arabic_num >= 4:
-            times = arabic_num / 4
+            times = arabic_num // 4
 
             arabic_num = arabic_num - (4 * times)
 
@@ -100,7 +100,7 @@ def conversion_func(arabic_num):
                 roman_num += 'IV'
 
         elif arabic_num >= 1:
-            times = arabic_num / 1
+            times = arabic_num // 1
 
             arabic_num = arabic_num - (1 * times)
 

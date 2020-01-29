@@ -1,114 +1,110 @@
 def conversion_func(arabic_num):
+    roman_num = ""
 
-	roman_num = ""
+    while arabic_num != 0:
 
-	while arabic_num != 0:
+        if arabic_num >= 1000:
+            times = arabic_num / 1000
 
+            arabic_num = arabic_num - (1000 * times)
 
-		if (arabic_num >= 1000):
-			times = arabic_num / 1000
+            for x in range(int(times)):
+                roman_num += 'M'
 
-			arabic_num = arabic_num - (1000 * times)
+        elif arabic_num >= 900:
+            times = arabic_num / 900
 
-			for	x in range(times):
-				roman_num += 'M'
+            arabic_num = arabic_num - (900 * times)
 
-		elif (arabic_num >= 900):
-			times = arabic_num / 900
+            for x in range(int(times)):
+                roman_num += 'CM'
 
-			arabic_num = arabic_num - (900 * times)
+        elif arabic_num >= 500:
+            times = arabic_num / 500
 
-			for	x in range(times):
-				roman_num += 'CM'
+            arabic_num = arabic_num - (500 * times)
 
-		elif (arabic_num >= 500):
-			times = arabic_num / 500
+            for x in range(int(times)):
+                roman_num += 'D'
 
-			arabic_num = arabic_num - (500 * times)
+        elif arabic_num >= 400:
+            times = arabic_num / 400
 
-			for	x in range(times):
-				roman_num += 'D'
+            arabic_num = arabic_num - (400 * times)
 
-		elif (arabic_num >= 400):
-			times = arabic_num / 400
+            for x in range(int(times)):
+                roman_num += 'CD'
 
-			arabic_num = arabic_num - (400 * times)
+        elif arabic_num >= 100:
+            times = arabic_num / 100
 
-			for	x in range(times):
-				roman_num += 'CD'
+            arabic_num = arabic_num - (100 * times)
 
-		elif (arabic_num >= 100):
-			times = arabic_num / 100
+            for x in range(int(times)):
+                roman_num += 'C'
 
-			arabic_num = arabic_num - (100 * times)
+        elif arabic_num >= 90:
+            times = arabic_num / 90
 
-			for	x in range(times):
-				roman_num += 'C'
+            arabic_num = arabic_num - (90 * times)
 
-		elif (arabic_num >= 90):
-			times = arabic_num / 90
+            for x in range(int(times)):
+                roman_num += 'XC'
 
-			arabic_num = arabic_num - (90 * times)
+        elif arabic_num >= 50:
+            times = arabic_num / 50
 
-			for	x in range(times):
-				roman_num += 'XC'
+            arabic_num = arabic_num - (50 * times)
 
-		elif (arabic_num >= 50):
-			times = arabic_num / 50
+            for x in range(int(times)):
+                roman_num += 'L'
 
-			arabic_num = arabic_num - (50 * times)
+        elif arabic_num >= 40:
+            times = arabic_num / 40
 
-			for	x in range(times):
-				roman_num += 'L'
+            arabic_num = arabic_num - (40 * times)
 
-		elif (arabic_num >= 40):
-			times = arabic_num / 40
+            for x in range(int(times)):
+                roman_num += 'XL'
 
-			arabic_num = arabic_num - (40 * times)
+        elif arabic_num >= 10:
+            times = arabic_num / 10
 
-			for	x in range(times):
-				roman_num += 'XL'
+            arabic_num = arabic_num - (10 * times)
 
-		elif (arabic_num >= 10):
-			times = arabic_num / 10
+            for x in range(int(times)):
+                roman_num += 'X'
 
-			arabic_num = arabic_num - (10 * times)
+        elif arabic_num >= 9:
+            times = arabic_num / 9
 
-			for	x in range(times):
-				roman_num += 'X'
+            arabic_num = arabic_num - (9 * times)
 
-		elif (arabic_num >= 9):
-			times = arabic_num / 9
+            for x in range(int(times)):
+                roman_num += 'IX'
 
-			arabic_num = arabic_num - (9 * times)
+        elif arabic_num >= 5:
+            times = arabic_num / 5
 
-			for	x in range(times):
-				roman_num += 'IX'
+            arabic_num = arabic_num - (5 * times)
 
-		elif (arabic_num >= 5):
-			times = arabic_num / 5
+            for x in range(int(times)):
+                roman_num += 'V'
 
-			arabic_num = arabic_num - (5 * times)
+        elif arabic_num >= 4:
+            times = arabic_num / 4
 
-			for	x in range(times):
-				roman_num += 'V'
+            arabic_num = arabic_num - (4 * times)
 
-		elif (arabic_num >= 4):
-			times = arabic_num / 4
+            for x in range(int(times)):
+                roman_num += 'IV'
 
-			arabic_num = arabic_num - (4 * times)
+        elif arabic_num >= 1:
+            times = arabic_num / 1
 
-			for	x in range(times):
-				roman_num += 'IV'
+            arabic_num = arabic_num - (1 * times)
 
-		elif (arabic_num >= 1):
-			times = arabic_num / 1
+            for x in range(int(times)):
+                roman_num += 'I'
 
-			arabic_num = arabic_num - (1 * times)
-
-			for	x in range(times):
-				roman_num += 'I'
-
-	return roman_num
-
-
+    return roman_num
